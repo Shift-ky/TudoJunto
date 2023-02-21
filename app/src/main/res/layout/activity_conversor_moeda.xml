@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".conversor_moeda"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/verde_light"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONVERSOR DE MOEDA"
+        android:gravity="center"
+        android:textSize="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        app:srcCompat="@drawable/dinheiro"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/entrada"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+
+        android:background="@color/white"
+        android:gravity="center"
+
+        android:hint="DIGITE UM VALOR EM REAL" />
+
+    <RadioGroup
+        android:id="@+id/RgEscolha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <RadioButton
+            android:id="@+id/RbDolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="DOLAR" />
+
+        <RadioButton
+            android:id="@+id/RbEuro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="EURO" />
+
+        <RadioButton
+            android:id="@+id/RbLibra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="LIBRA" />
+
+        <RadioButton
+            android:id="@+id/RbYens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IENE" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="converter"
+        android:text="CONVERTER" />
+
+    <TextView
+        android:id="@+id/saida"
+        android:layout_width="260dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        android:gravity="center"
+
+        android:textColorHint="@color/teal_700"/>
+
+    <ImageView
+        android:id="@+id/imgSaida"
+        android:layout_width="102dp"
+        android:layout_height="102dp"
+        android:layout_gravity="center"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_marginTop="20dp
+"
+        />
+
+
+</LinearLayout>
